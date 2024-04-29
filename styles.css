@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+/* colors */
+:root {
+    --green:#018746;
+    --color-night: rgb(18, 19, 15);
+    --color-white: rgba(255, 255, 255, 0.969);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color:var(--color-white); */
+    box-sizing: border-box;    /* width includes padding and border */
+    font-family: "Noto Serif", sans-serif;
+}
+
+/* body {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 18px;
+} */
+
+h1 {
+    font-weight: lighter;
+}
+
+a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.header {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 17px 100px;
+    background-color: #00bf63;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s;
+    z-index: 1000;
+}
+
+
+.logo {
+    width: 190px;
+    height: auto;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    transition: 0.3s;
+}
+
+.navbar a.active::before,
+.navbar a:hover::before {
+    width: 100%
+}
+
+.cover {
+    position: relative;
+    width: 100%;
+}
+
+.cover-image {
+    width: 100%;
+}
+
+.cover-text {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.cover-title {
+    font-size: 78px;
+}
+
+.button {
+    color: var(--color-white);
+    padding: 10px 20px;
+    background-color: var(--green);
+    border: 10px;
+    border-color: black;
+    font-size: 18px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-radius: 15px;
+    margin-left: 50px;
+    margin-right: -50px;
+}
+
+.button:hover {
+    background-color: lawngreen;
+    color: var(--color-night);
+    transition: 0.3s;
+    border-radius: 25px;
+}
+
+.button:active {
+    transform: scale(0.96)
+}
+
+.image-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    margin: 30px;
+    width: 300px;
+    background-color: var(--color-white);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+  
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 18px;
+    color: rgb(119, 119, 119);
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.download {
+    width: 0%;
+}
+
+.developer-bar {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--green);
+    color: var(--color-white);
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
