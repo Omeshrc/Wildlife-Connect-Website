@@ -10,10 +10,16 @@
   
 <h2>💻 Built with</h2>
 
-Technologies used in the project:
+Technologies used in the project/application:
 
 *   Flutter
 *   NodeJs
 *   Express
 *   Python
 *   TensorFlow
+
+Technologies used for the website
+
+* HTML
+* CSS
+* JavaScript  
