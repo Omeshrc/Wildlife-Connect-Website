@@ -1,4 +1,4 @@
-<h1 align="center" id="title">The Wildlife Connect Official Website</h1>
+<h1 align="left" id="title">The Wildlife Connect Official Website</h1><br>
 
 <p id="description">Visit the Wildlife Connect Website to view why Wildlife Connect can make your life better with fellow enthusiasts and conservationists; and to be an wildlife enthusiast yourself!</p>
 
